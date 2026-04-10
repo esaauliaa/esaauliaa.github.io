@@ -47,16 +47,10 @@ Website portofolio pribadi yang responsif dan modern, dibuat menggunakan HTML, C
 
 ## Struktur Folder
 portfolio/
-│
-├── index.html
-├── style.css
-├── script.js
-├── images/
-│ ├── esa.png
-│ ├── web.png
-│ ├── uiux.png
-│ ├── dan lainnya
-
+- index.html
+- style.css
+- script.js
+- images/
 
 ---
 
