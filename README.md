@@ -87,3 +87,12 @@ Saya tertarik untuk mengembangkan solusi digital yang tidak hanya fungsional, te
 ## Catatan
 
 Project ini dibuat sebagai bagian dari pengembangan portofolio pribadi dan pembelajaran.
+
+---
+
+## Screenshot
+![alt text](https://github.com/esaauliaa/esaauliaa.github.io/blob/main/Screenshot%20Tampilan/home.png?raw=true)
+![alt text](https://github.com/esaauliaa/esaauliaa.github.io/blob/main/Screenshot%20Tampilan/about%20me.png?raw=true)
+![alt text](https://github.com/esaauliaa/esaauliaa.github.io/blob/main/Screenshot%20Tampilan/service.png?raw=true)
+![alt text](https://github.com/esaauliaa/esaauliaa.github.io/blob/main/Screenshot%20Tampilan/portofolio.png?raw=true)
+![alt text](https://github.com/esaauliaa/esaauliaa.github.io/blob/main/Screenshot%20Tampilan/contact.png?raw=true)
