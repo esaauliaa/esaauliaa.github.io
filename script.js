@@ -1,13 +1,9 @@
 console.log("Portfolio Esa Aulia ready!");
 
-// NAVBAR
+// NAVBAR ACTIVE
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
 
-// ANIMASI
-const reveals = document.querySelectorAll(".reveal");
-
-// NAVBAR ACTIVE
 function updateActiveNav() {
   let currentSection = "home";
 
@@ -28,24 +24,40 @@ function updateActiveNav() {
   });
 }
 
-// SCROLL NAVBAR
 window.addEventListener("scroll", updateActiveNav);
 window.addEventListener("load", updateActiveNav);
 
-// ANIMASI REPEATABLE
+
+// SMOOTH SCROLL (AMAN) 
+document.querySelectorAll("a[href^='#']").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  });
+});
+
+
+// ANIMASI SCROLL
+const reveals = document.querySelectorAll(".reveal");
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     } else {
-      entry.target.classList.remove("show"); // biar bisa animasi lagi
+      entry.target.classList.remove("show"); // biar animasi repeat
     }
   });
 }, {
   threshold: 0.2
 });
 
-// APPLY
 reveals.forEach((el) => {
   observer.observe(el);
 });
